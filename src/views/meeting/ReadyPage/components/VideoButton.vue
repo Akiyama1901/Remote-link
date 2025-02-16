@@ -2,19 +2,18 @@
     <div>
         <div v-if="!disabled" class="btn-item" @click="open">
             <el-icon>
-                <Mute color="#fff" />
+                <Camera color="#fff" />
             </el-icon>
         </div>
         <div v-else class="btn-item" @click="close">
             <el-icon>
-                <Microphone color="#fff" />
+                <CameraFilled color="#fff" />
             </el-icon>
         </div>
     </div>
 </template>
 
 <script setup>
-
 const props = defineProps({
     disabled: {
         type: Boolean,

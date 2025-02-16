@@ -6,7 +6,7 @@
                 {{ tips }}
             </div>
             <div class="bottom-wrapper">
-                <MicroButton :disabled="hasAudioInput" @open="openMicro" @close="closeMicro" />
+                <MicroButton :disabled="hasAudioInput" :volume="volume" @open="openMicro" @close="closeMicro" />
                 <VideoButton :disabled="hasVideoInput" @open="openCamera" @close="closeCamera" />
             </div>
         </div>
@@ -18,7 +18,7 @@ import MicroButton from './components/MicroButton.vue';
 import VideoButton from './components/VideoButton.vue';
 
 import { useDevice } from './use-device';
-const { tips, videoRef, hasAudioInput, hasVideoInput, openMicro, closeMicro, openCamera, closeCamera } = useDevice();
+const { tips, videoRef, hasAudioInput, hasVideoInput, openMicro, closeMicro, openCamera, closeCamera, volume } = useDevice();
 </script>
 
 <style scoped lang="scss">

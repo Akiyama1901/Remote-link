@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MeetingView from "../views/meeting/index.vue";
+import Index from "../views/index.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/index",
     name: "home",
-    component: MeetingView,
+    component: Index,
   },
 ];
 
